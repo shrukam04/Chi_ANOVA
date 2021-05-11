@@ -167,16 +167,15 @@ cat("p-value = ",Result_03$p.value, " and alpha = ",alpha_03)
 #Section 12-1
   
  # The amount of sodium (in milligrams) in one serving for a random sample of three different kinds of foods is listed. At the 0.05 level of significance, is there sufficient evidence to conclude that a difference in mean sodium amounts exists among condiments, cereals, and desserts?
-  
- # Condiments	Cereals	Desserts
+ #Condiments	Cereals	Desserts
 #270	260	100
 #130	220	180
 #230	290	250
 #180	290	250
-#80	200	300
-#70	320	360
+#80	  200	300
+#70	  320	360
 #200	140	300
-#       160
+#         160
 
 #Sodium contents of food
 sodium_contents <- data.frame(Condiments <- c(270,130, 230, 180, 80, 70, 200,NA),
@@ -232,7 +231,7 @@ TukeyHSD(Anova_test_01)
 --------------------------------------------------------------------------------------
  # The expenditures (in dollars) per pupil for states in three sections of the country are listed. Using α = 0.05, can you conclude that there is a difference in means?
   
- # Eastern third	Middle third	Western third
+# Eastern third	Middle third	Western third
 #4946	6149	5282
 #5953	7451	8605
 #6202	6000	6528
